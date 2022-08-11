@@ -1,8 +1,4 @@
-// // ____DATA DEFINITIONS____ // //
 
-// Board is List[List[Int]] or false
-// interp. as a sudoku board, or false if the given board is invalid
-// EXAMPLE BOARDS
 
 const b = null
 
@@ -99,8 +95,6 @@ function solve(board) {
 }
 
 // ______TESTS______ //
-// console.log(solve(bd4))
-// ______TESTS______ //
 
 
 function searchForSolution(boards){
@@ -137,9 +131,6 @@ function solved(board){
     return true
 }
 
-// ______TESTS______ //
-// console.log(solved(bd3))
-// ______TESTS______ //
 
 
 function nextBoards(board){ 
@@ -175,10 +166,7 @@ function findEmptySquare(board){
     }
 }
 
-// ______TESTS______ //
-// console.log(nextBoards(bd3))
-// console.log(findEmptySquare(bd3))
-// ______TESTS______ //
+
 
 function keepOnlyValid(boards){
     // THIS FUNCTION WORKS.
@@ -270,24 +258,7 @@ function boxesGood(board){
     return true
 }
 
-// ______TESTS______ //
-// console.log("Rows:")
-// console.log(rowsGood(bd1))
-// console.log(rowsGood(bd2))
-// console.log(rowsGood(bd3))
-// console.log("Columns:")
-// console.log(columnsGood(bd1))
-// console.log(columnsGood(bd2))
-// console.log(columnsGood(bd3))
-// console.log("Boxes:")
-// console.log(boxesGood(bd1))
-// console.log(boxesGood(bd2))
-// console.log(boxesGood(bd3))
-// console.log("Valid?")
-// console.log(validBoard(bd1))
-// console.log(validBoard(bd2))
-// console.log(validBoard(bd3))
-// ______TESTS______ //
+
 
 
 function updateBoard(board) {
